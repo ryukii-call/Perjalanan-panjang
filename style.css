@@ -1,6 +1,5 @@
-body {
+  body {
  font-family:'montserrat', sans-serif;
- background-color: #f2f2f2;
  margin: 0;
 }
 h1{
@@ -38,25 +37,19 @@ p {
 li{
  color: #555;
  line-height: 1.6;
- 
 }
 .box {
  background: white;
  padding: 16px;
  margin: 15px;
- bordepxr-radius: 8px;
+ bordepxr-radius: 12px;
+ max-width: 600px;
+ margin: 30 px auto;
+ box-shadow:0 0 10px rgba(0,0,0,0.15);
+ text-align: none;
 }
 table {
  font-size: 25px;
-}
-.container {
-  max-width: 600px;
-  margin: 30px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
 }
 a {
   text-decoration: none;
@@ -73,7 +66,6 @@ a:hover {
 }
 img {
   width: 150px;
-  border-radius: 50%;
   margin-top: 10px;
 }
 a{
@@ -84,10 +76,11 @@ a:hover{
  background: #0056b3;
 }
 .container {
- box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+ border-radius:8px;
+ text-align: center;
 }
-@keyframes fadein {
- from {
+  @keyframes fadeIn {
+  from {
     opacity: 0;
     transform: translateY(30px);
   }
@@ -96,11 +89,12 @@ a:hover{
     transform: translateY(0);
   }
 }
-.container {
-  animation: fadeIn 1s ease;
+.box {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
  @media (max-width: 600px) {
-  .container {
+  .box {
     margin: 10px;
     padding: 15px;
   }
@@ -110,4 +104,4 @@ a:hover{
 }
 body {
   background: linear-gradient(135deg, white, black);
-}
+  }
