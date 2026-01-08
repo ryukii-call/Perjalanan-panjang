@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tentang saya</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container fade-in">
+  <script>
+function toggleDark() {
+    document.body.classList.toggle("dark");
+
+    // SIMPAN STATUS
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("mode", "dark");
+    } else {
+        localStorage.setItem("mode", "light");
+    }
+}
+
+// CEK SAAT HALAMAN DIBUKA
+if (localStorage.getItem("mode") === "dark") {
+    document.body.classList.add("dark");
+}
+</script>
+
+  <p>Saya adalah seseorang yang sedang menekuni dunia coding, fokus belajar HTML, CSS, untuk membangun website yang fungsional dan menarik</p>
+  </div>
+  <a href="index.html" class="btn">kembali ke home</a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+</html>
